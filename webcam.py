@@ -13,7 +13,7 @@ while True:
     success, img = webcam.read()
     if success:
         gray=cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-        cats = cat_cascade.detectMultiScale(gray, 1.3, minNeighbors = 3)
+        cats = cat_cascade.detectMultiScale(gray, 1.25, minNeighbors = 2)
         
         for (x,y,w,h) in cats:
             roi_rgb = img[y:y+h, x:x+w]
