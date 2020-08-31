@@ -1,0 +1,4 @@
+datasets/cat_imgs/*
+cnn_model/*
+cnn_model/variables/*
+haarcascade_frontalcatface_extended.xml
